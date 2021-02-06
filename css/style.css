@@ -1,3 +1,7 @@
+/*Macbook display 1440x900*/
+
+@media only screen and (max-width: 1440px){
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 * {
@@ -194,6 +198,10 @@ p {
   }
 }
 
+}
+
+
+/* Mobile display */
 @media only screen and (max-width: 500px) {
   .container {
     padding: 20px 20px;
