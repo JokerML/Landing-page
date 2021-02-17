@@ -13,286 +13,129 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
-  object-fit: cover
+  object-fit: cover;
 }
 
-h1,h2 {
-  line-height: 1.6;
-  margin: 5px 0;
-  font-weight: 800;
+.container-fluid {
+  padding: 28px 50px;
+  height: 100vh;
+  position: relative;
+}
+
+.line-divider {
+  color: orange;
+  margin: 9px 0;
+}
+
+.header-section .logo-text {
+  font-size: 18px;
   color: #fff;
+  text-transform: uppercase;
+}
+
+.header-contents {
+    margin: 20px 0 0;
+}
+
+.header-content .header-title {
+  font-size: 38px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 400;
   letter-spacing: 2px;
+  float: left;
+  line-height: 100%;
 }
 
-p {
-  letter-spacing: 2px;
-  color: #fff;
-}
-
-span {
-  color: #fff;
-}
-
-.container {
-  width: 100%;
-  height: 100%;
-  padding: 50px;
-  overflow: auto;
-  z-index: 100;
-}
-
-/* logo */
-.logo {
-  animation: slideLeft 2s ease-in;
-}
-
-/* Divider line */
-.line {
-  width: 100%;
-  height: 2px;
-  background-color: orange;
-}
-
-/* showcase */
-.showcase {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.showcase strong {
-  font-weight: 900;
-  letter-spacing: 0.2px;
-  animation: grow 4s infinite;
-}
-
-.showcase .big {
-  font-size: 6em;
-}
-
-.showcase .small {
-  font-size: 4.7em;
-}
-
-.showcase p {
-  margin: -3em 0 0;
-  font-size: 30px;
-  color: #fff;
-  animation: slideLeft 2s ease-in;
-  font-weight: 600;
-}
-
-/* About */
-.about {
-  margin: 80px 0;
-  animation: slideLeft 2s ease-in;
-}
-
-.about h1 {
-  font-size: 60px;
-}
-
-.about p {
-  width: 400px;
-  line-height: 1.2;
-  text-align: justify;
-  color: #fff;
-  letter-spacing: 0.9px;
-  line-height: 1.5;
-}
-
-/* Button */
-.button {
+.header-number {
   float: right;
-  margin-top: -180px;
-  animation: slideRight 2s ease-in;
+  color: orange
 }
 
-.button a {
-  padding: 10px 20px;
-  border: none;
-  outline: none;
-  border-radius: 2em;
-  font-weight: 600;
-  font-size: 15px;
-  cursor: pointer;
-  background-color: #fff;
-  text-decoration: none;
-  color: #000;
+.header-number .small {
+    font-weight: bold;
+    font-size: 155px;
+    line-height: 86%;
+    vertical-align: top;
+    margin-right: -6px;
 }
 
-.button .fb {
-  margin: 10px 0;
+.header-number .big {
+    font-weight: 600;
+    font-size: 185px;
+    line-height: 85%;
+    vertical-align: top;
+}
+/* end header css */
+
+/* Footer css */
+.footer-section {
+    position: absolute;
+    bottom: 0;
+    width: 90%;
 }
 
-.button a:hover{
-  background-color: #0070FF;
-  color: #fff;
-}
-
-/* Footer */
-.footer {
+.footer-flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  height: 100%
 }
 
-.footer span {
-  font-size: 15px;
-  margin: 0;
-  animation: slideLeft 2s ease-in;
-  color: #fff;
-}
-
-.footer a {
-  font-size: 15px;
-  margin: 0;
-  cursor: pointer;
-  color: #fff;
-  animation: slideRight 2s ease-in;
-}
-
-.footer .social {
-  display: none;
-}
-
-/* Animation */
-@keyframes slideLeft {
-  0% {
-    transform: translateX(-100%);
-  }
-  
-  50% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideRight {
-  0% {
-    transform: translateX(100%);
-  }
-  
-  50% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes grow {
-    50% {
-        transform: translate(-5px) scale(1.1);
-     }
-  }
-
-
-
-/* Mobile display */
-@media only screen and (max-width: 500px) {
-  .container {
-    width: 100%;
-    height: 100%;
-    padding: 60px 30px 0;
-  }
-  
-  .showcase {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  } 
-  
-  .showcase p {
-    font-size: 15px;
-    margin-top: -25px;
-    margin-left: auto;
-  }
-  
-  .about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    margin-top: -1em;
-    padding: 20px 0;
-  }
-  
-  .about h1 {
-    font-size: 30px;
-    text-align: center;
-  }
-  
-  .about p {
-    width: auto;
-  }
-  
-  .button {
-    display: none;
-  }
-  
-  .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .footer span {
+.footer-title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 110px;
     color: #fff;
-  }
-  
-  .footer a {
-    text-decoration: none;
-    margin-left: 10px;
-    margin-top: -7em;
-    transition: transform 0.5s ease-in;
-    cursor: pointer;
-  }
-  
-  .footer #email {
-    background-color: #fff;
-    width: 50px;
-    height: 30px;
-    color: red;
-    text-align: center;
-    font-weight: 800;
-    border-radius: 5px;
-    font-size: 15px;
-    box-shadow: 2px 2px 5px gray, -2px -2px 5px gray;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .footer #fb {
-    background-color: #fff;
-    width: 50px;
-    height: 30px;
-    color: darkblue;
-    text-align: center;
-    font-weight: 800;
-    border-radius: 5px;
-    font-size: 15px;
-    box-shadow: 2px 2px 5px darkgray, -2px -2px 5px darkgray;;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .footer .social {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .footer #contact {
-    display: none;
-  }
-  
-  .footer a:hover {
-    transform: scale(1.0) translateY(-5px);
-  }
+    line-height: 90%;
+    margin: 0 0 35px -7px;
 }
+
+.footer-text {
+    font-weight: 400;
+    font-size: 20px;
+    color: #ffffff;
+    width: 50%;
+    text-align: justify;
+}
+
+.footer-link {
+  margin: 13em 0 0 0;
+}
+
+.footer-link a {
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    padding: 16px 30px;
+    font-size: 20px;
+    border-radius: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    margin: 7px 0 0 0;
+    outline: none;
+    transition: 1s;
+}
+
+.footer-link a:hover {
+  background-color: blue;
+  color: #fff;
+}
+
+.copyright .copyright-content-left {
+  float: left;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: underline;
+  padding: 0 0 28px 0;
+}
+
+.copyright-content-right {
+  float: right;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: underline;
+  padding: 0 0 28px 0;
+}
+
