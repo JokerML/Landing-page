@@ -139,3 +139,101 @@ body {
   padding: 0 0 28px 0;
 }
 
+/* Laptop */
+@media screen 
+  and (min-device-width: 1200px), 
+  and (max-device-width: 1600px), 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    
+}
+
+
+/* Portrait and Landscape mobile */
+@media screen
+  and (device-width: 360px),
+  and (device-height: 640px),
+  and (-webkit-device-pixel-ratio: 2) {
+    
+    body {
+  background-color: #1b2631;
+  background-image: url('../image/joker.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+    
+    .container-fluid {
+      padding: 28px 30px;
+    }
+    
+    .header-content .header-title {
+      font-size: 18px;
+      transform: translateY(-2.4em) translateX(9.5em);
+      letter-spacing: 0;
+    }
+    
+    .header-number {
+      float: none;
+      transform: translateY(3em) translateX(-7px);
+    }
+    
+    .header-number .small {
+      font-size: 70px;
+    }
+    
+    .header-number .big {
+      font-size: 90px;
+    }
+    
+    .footer-section {
+      top: 35%;
+    }
+    
+    .footer-flex {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .footer-title {
+      font-size: 30px;
+      line-height: 10%;
+      color: #fff;
+    }
+    
+    .footer-text {
+      font-size: 18px;
+      width: 90%;
+      color: #fff;
+    }
+    
+    .footer-link {
+      margin: 5em 0 0 0;
+    }
+    
+    .footer-link a {
+      padding: 8px 10px;
+      font-size: 18px;
+      width: 200px;
+    }
+    
+    .copyright {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    
+    .copyright-content-left,
+    .copyright-content-right {
+      padding: 0 0 0 0;
+    }
+    
+    .copyright-content-right {
+      margin: -1em 0;
+    }
+    
+
+}
