@@ -150,8 +150,8 @@ body {
 
 /* Portrait and Landscape mobile */
 @media screen
-  and (device-width: 360px),
-  and (device-height: 640px),
+  and (max-width: 360px),
+  and (max-height: 640px),
   and (-webkit-device-pixel-ratio: 2) {
     
     body {
