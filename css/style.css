@@ -190,6 +190,10 @@ body {
       top: 35%;
     }
     
+    .footer-section .line-divider {
+      width: 95%;
+    }
+    
     .footer-flex {
       display: flex;
       flex-direction: column;
