@@ -28,12 +28,6 @@ body {
   width: 100%;
 }
 
-.header-section {
-  position: absolute;
-  width: 100%;
-}
-
-
 .header-section .logo-text {
   font-size: 18px;
   color: #fff;
@@ -79,7 +73,6 @@ body {
 .footer-section {
     position: absolute;
     bottom: 0;
-    width: 100%;
 }
 
 .footer-flex {
