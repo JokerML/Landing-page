@@ -76,6 +76,9 @@ body {
     bottom: 0;
     width: 90%;
 }
+.footer-section .line-divider {
+  width: 100%;
+}
 
 .footer-flex {
   display: flex;
