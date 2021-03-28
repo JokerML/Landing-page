@@ -29,7 +29,8 @@ body {
 }
 
 .header-section {
-  position: relative;
+  position: absolute;
+  width: 100%;
 }
 
 
