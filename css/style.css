@@ -25,8 +25,12 @@ body {
 .line-divider {
   color: orange;
   margin: 9px 0;
-  width: 100%;
 
+}
+
+.header-section .line-divider {
+  width: 90%;
+  
 }
 
 .header-section .logo-text {
